@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="view_hr_contract_form_inherit" model="ir.ui.view">
+    <field name="name">hr.contract.form.inherit</field>
+    <field name="model">hr.contract</field>
+    <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//group[@name='salary_info']" position="after">
+        <group string="Net/Gross Salary Calculation">
+            <field name="selected_components" widget="many2many_tags"/>
+            <field name="net_salary" readonly="1"/>
+            <field name="gross_salary" readonly="1"/>
+        </group>
+      </xpath>
+    </field>
+  </record>
+</odoo>
