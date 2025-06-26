@@ -1,6 +1,6 @@
 {
     "odoo_version": "18.0",
-    "name": "Gross Salary Calculator",
+    "name": "Gross Salary Calculator - Egyptian Payroll",
     "author": "Osama Moawad",
     "version": "1.3",
     "summary": "Calculate gross salary from net",
