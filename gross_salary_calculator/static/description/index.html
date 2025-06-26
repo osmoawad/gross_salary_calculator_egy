@@ -1,12 +1,84 @@
-<h1>Gross Salary Calculator for Odoo</h1>
-<p>This module calculates <strong>gross salary from net salary</strong> based on the Egyptian payroll law (2025).</p>
+<h1>Gross Salary Calculator for Odoo 18</h1>
 
-<h3>Features:</h3>
+<p>This module allows HR departments to calculate <strong>gross salary from net salary</strong> in compliance with the <strong>Egyptian tax law (2025)</strong>.</p>
+
+<h3>🎯 Features</h3>
 <ul>
-  <li>Supports social insurance ceiling (14,500 EGP)</li>
-  <li>Calculates income tax based on 2024 slabs</li>
-  <li>Includes Martyrs' Families Fund (0.05%)</li>
-  <li>Works from Odoo 13 to 18</li>
+  <li>Convert <strong>Net to Gross</strong> salary using accurate tax and insurance deductions.</li>
+  <li>Supports <strong>income tax slabs</strong> with precise rounding (down to 10 piastres).</li>
+  <li>Includes <strong>Martyrs Fund contribution</strong> and <strong>social insurance</strong> rules.</li>
+  <li>Easily integrated into Odoo 18 Payroll structure.</li>
+  <li>Works seamlessly with salary rules and contracts.</li>
 </ul>
 
-<p>Just enter the net salary, and the module will reverse calculate the gross salary, ready to use in contracts and payslips.</p>
+<h4>📦 Compatible with:</h4>
+<ul>
+  <li>Odoo 18.0 Community & Enterprise</li>
+</ul>
+
+<h3>🧾 Egyptian Tax Formula (2025)</h3>
+<p>The logic inside the module is based on the official Egyptian income tax brackets and deduction rules, including:</p>
+<ul>
+  <li>Social insurance (11%)</li>
+  <li>Tax exemption (EGP 20,000 annually)</li>
+  <li>Sliding tax brackets</li>
+  <li>Martyrs Fund 0.05%</li>
+</ul>
+
+<h3>What does this module do?</h3>
+<p>If your company agrees with employees on the net salary (the amount received in hand),<br>
+this module calculates the gross salary (before deductions) automatically.</p>
+
+<h4>How to start:</h4>
+<ol>
+  <li>Go to Odoo &gt; Human Resources &gt; Contracts.</li>
+  <li>Open an existing contract or create a new one.</li>
+</ol>
+
+<p>You will see new fields:</p>
+<ul>
+  <li>Net Salary: Enter the amount the employee should receive.</li>
+  <li>Gross Salary: This is calculated automatically — the salary before deductions.</li>
+  <li>Net Salary Fields: Optionally, select other components to be included in the net.</li>
+</ul>
+
+<p><strong>Example:</strong><br>
+If you enter a net salary of 20,000 EGP,<br>
+the system calculates social insurance, income tax, martyrs fund,<br>
+and tells you the required gross salary.</p>
+
+<h4>Why is this useful?</h4>
+<ul>
+  <li>Ensures the employee receives the exact agreed amount.</li>
+  <li>Deductions are calculated correctly.</li>
+  <li>Payroll and reports stay accurate.</li>
+</ul>
+
+<hr>
+
+<h3>‏ده الموديول بيعمل إيه؟</h3>
+<p>لو شركتك بتتفق مع الموظف على المرتب الصافي (يعني المرتب اللي هيوصله في إيده)،<br>الموديول ده بيحسب لك المرتب قبل الخصومات (اللي هو المرتب الشامل أو الإجمالي) أوتوماتيك.</p>
+
+<h4>أول حاجة تعملها:</h4>
+<ol>
+  <li>افتح Odoo وروح على الموارد البشرية &gt; العقود.</li>
+  <li>افتح عقد أي موظف أو اعمل عقد جديد.</li>
+</ol>
+
+<p>هتلاقي شوية خانات جديدة ظهرت لك:</p>
+<ul>
+  <li>الراتب الصافي (Net Salary): دخل هنا المرتب اللي الموظف هياخده في إيده.</li>
+  <li>الراتب الشامل (Gross Salary): دي هتحسب لوحدها — وده المرتب قبل الخصم.</li>
+  <li>اختيار مكونات الراتب: لو فيه بدلات أو إضافات عايز تدخلها في الصافي، ممكن تختارها من هنا.</li>
+</ul>
+
+<p><strong>يعني إيه؟</strong><br>
+لو دخلت مثلًا صافي 20,000 جنيه:<br>
+السيستم هيحسب: كام تأمينات – كام ضريبة دخل – صندوق الشهداء<br>وفي الآخر يقولك المرتب الشامل اللي المفروض تسجله كام.</p>
+
+<h4>ليه ده مفيد؟</h4>
+<ul>
+  <li>المرتب اللي كتبته هو اللي الموظف هياخده فعلًا.</li>
+  <li>كل الاستقطاعات تتحسب صح.</li>
+  <li>مرتب الموظف يظهر مظبوط في المرتبات والتقارير.</li>
+</ul>
