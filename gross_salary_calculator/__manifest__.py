@@ -9,9 +9,9 @@
     "data": [
         "views/hr_contract_views.xml"
     ],
-    'images': [
-        'static/description/icon.jpg'
-        'static/description/cover.jpg'
+    "images": [
+        "static/description/icon.jpg",
+        "static/description/cover.jpg"
     ],
     "installable": True,
     "application": False,
