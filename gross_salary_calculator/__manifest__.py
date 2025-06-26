@@ -10,8 +10,8 @@
         "views/hr_contract_views.xml"
     ],
     "images": [
-        "static/description/icon.jpg",
-        "static/description/cover.jpg"
+        "static/description/icon.png",
+        "static/description/cover.png"
     ],
     "installable": True,
     "application": False,
