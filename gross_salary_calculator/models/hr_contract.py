@@ -5,6 +5,11 @@ from decimal import Decimal, ROUND_HALF_UP, getcontext
 getcontext().prec = 12
 
 class HrContract(models.Model):
+
+    exclude_tax = fields.Boolean(string="Exclude Tax Calculation")
+    exclude_insurance = fields.Boolean(string="Exclude Insurance Calculation")
+    exclude_martyrs = fields.Boolean(string="Exclude Martyrs Fund Calculation")
+
     _inherit = 'hr.contract'
 
     selected_components = fields.Many2many(
@@ -88,15 +93,15 @@ class HrContract(models.Model):
             for _ in range(max_iter):
                 guess = (low + high) / 2
                 insurance_salary = min(guess, Decimal('14500'))
-                insurance = insurance_salary * Decimal('0.11')
-                martyrs_tax = guess * Decimal('0.0005')
+                insurance = insurance_salary * Decimal('0.11') if not contract.exclude_insurance else Decimal('0.0')
+                martyrs_tax = guess * Decimal('0.0005') if not contract.exclude_martyrs else Decimal('0.0')
 
                 gross_annual = guess * Decimal('12')
                 insurance_annual = insurance * Decimal('12')
                 taxable_annual = gross_annual - insurance_annual - Decimal('20000')
                 taxable_annual = max(taxable_annual, Decimal('0.0'))
 
-                tax_annual = contract.compute_annual_tax(taxable_annual)
+                tax_annual = contract.compute_annual_tax(taxable_annual) if not contract.exclude_tax else Decimal('0.0')
                 tax_monthly = tax_annual / Decimal('12')
 
                 net = guess - insurance - tax_monthly - martyrs_tax
