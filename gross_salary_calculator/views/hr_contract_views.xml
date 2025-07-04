@@ -10,6 +10,9 @@
             <field name="selected_components" widget="many2many_tags"/>
             <field name="net_salary" readonly="1"/>
             <field name="gross_salary" readonly="1"/>
+            <field name="exclude_tax"/>
+            <field name="exclude_insurance"/>
+            <field name="exclude_martyrs"/>
         </group>
       </xpath>
     </field>
