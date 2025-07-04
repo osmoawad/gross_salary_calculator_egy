@@ -1,44 +1,60 @@
+<h1>Gross Salary Calculator for Odoo 18</h1>
 
-<h2>Gross Salary Calculator for Egypt (Odoo 13-18)</h2>
+<p>This module allows HR departments to calculate <strong>gross salary from net salary</strong> in compliance with the <strong>Egyptian tax law (2025)</strong>.</p>
 
-<p>This module allows HR and payroll departments to accurately calculate <strong>gross salary from net salary</strong> based on the <strong>Egyptian tax law of 2025</strong>.</p>
-
-<h3>💡 Features</h3>
+<h3>Features</h3>
 <ul>
-  <li>Net to Gross salary calculation based on official tax brackets.</li>
-  <li>Includes <strong>Martyrs Fund (0.05%)</strong> and <strong>Social Insurance (11%)</strong>.</li>
-  <li>Supports income tax with precise rounding down to 10 piastres.</li>
-  <li>Checkboxes to exclude Insurance, Tax, or Martyrs Fund.</li>
-  <li>Works directly inside the <strong>HR Contract</strong> form.</li>
-  <li>Compatible with Odoo <strong>13.0 to 18.0</strong> (Community & Enterprise).</li>
+  <li>Convert <strong>Net to Gross</strong> salary using accurate tax and insurance deductions.</li>
+  <li>Supports <strong>income tax slabs</strong> with precise rounding (down to 10 piastres).</li>
+  <li>Includes <strong>Martyrs Fund contribution</strong> and <strong>social insurance</strong> rules.</li>
+  <li>Optional checkboxes to exclude <strong>insurance</strong>, <strong>tax</strong>, or <strong>Martyrs Fund</strong> from gross salary calculation.</li>
+  <li>Easily integrated into Odoo 18 Payroll structure.</li>
+  <li>Works seamlessly with salary rules and contracts.</li>
 </ul>
 
-<h3>🧾 Tax Formula Logic (2025)</h3>
+<h4>Compatible with:</h4>
 <ul>
-  <li>Social Insurance: 11% capped at 14,500 EGP</li>
-  <li>Martyrs Fund: 0.05% of gross salary</li>
-  <li>Income Tax: progressive brackets with 20,000 EGP exemption</li>
+  <li>Odoo 18.0 Community & Enterprise</li>
 </ul>
 
-<h3>📦 How It Works</h3>
+<h3>Egyptian Tax Formula (2025)</h3>
+<p>The logic inside the module is based on the official Egyptian income tax brackets and deduction rules, including:</p>
+<ul>
+  <li>Social insurance (11%)</li>
+  <li>Tax exemption (EGP 20,000 annually)</li>
+  <li>Sliding tax brackets</li>
+  <li>Martyrs Fund 0.05%</li>
+</ul>
+
+<h3>What does this module do?</h3>
+<p>If your company agrees with employees on the net salary (the amount received in hand),<br>
+this module calculates the gross salary (before deductions) automatically.</p>
+
+<h4>How to start:</h4>
 <ol>
-  <li>Go to <strong>Employees → Contracts</strong>.</li>
-  <li>Create or open a contract.</li>
-  <li>Enter <strong>Net Salary</strong>.</li>
-  <li>The system calculates the <strong>Gross Salary</strong> automatically.</li>
+  <li>Go to Odoo - Human Resources - Contracts.</li>
+  <li>Open an existing contract or create a new one.</li>
 </ol>
 
-<h3>✔️ Why You Need It</h3>
+<p>You will see new fields:</p>
 <ul>
-  <li>Ensure the employee receives the exact agreed amount.</li>
-  <li>Maintain tax & insurance compliance.</li>
-  <li>Simplify HR payroll configuration.</li>
+  <li>Net Salary: Enter the amount the employee should receive.</li>
+  <li>Gross Salary: This is calculated automatically — the salary before deductions.</li>
+  <li>Net Salary Fields: Optionally, select other components to be included in the net.</li>
 </ul>
 
-<h3>📸 Screenshots</h3>
-<p>Make sure your module has <code>cover.jpg</code> and <code>icon.png</code> included to display images here.</p>
+<p><strong>Example:</strong><br>
+If you enter a net salary of 20,000 EGP,<br>
+the system calculates social insurance, income tax, martyrs fund,<br>
+and tells you the required gross salary.</p>
 
-<h3>🔗 Support</h3>
-<p>If you need assistance, feel free to reach out via my LinkedIn:</p>
-<p><a href="https://www.linkedin.com/in/osama-ahmed-moawad/" target="_blank">
-🔗 Osama Ahmed Moawad – LinkedIn</a></p>
+<h4>Why is this useful?</h4>
+<ul>
+  <li>Ensures the employee receives the exact agreed amount.</li>
+  <li>Deductions are calculated correctly.</li>
+  <li>Payroll and reports stay accurate.</li>
+</ul>
+
+<h3>Support</h3>
+<p>If you need assistance or have any questions, feel free to reach out via LinkedIn:</p>
+<p><strong>https://www.linkedin.com/in/osama-ahmed-moawad/</strong></p>
