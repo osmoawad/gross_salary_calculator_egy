@@ -1,4 +1,4 @@
-![Gross to Net Egypt Payroll 2025](cover.png)
+![Gross to Net Egypt Payroll 2025](https://raw.githubusercontent.com/osmoawad/gross_salary_calculator_egy/18.0/cover.png)
 
 # Egyptian Gross Salary Calculator
 
